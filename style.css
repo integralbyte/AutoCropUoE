@@ -1,0 +1,34 @@
+#output {
+    border: 1px solid #ddd;
+    max-width: 413px;
+    max-height: 531px;
+    display: block;
+}
+.controls {
+    margin-top: 10px;
+}
+button {
+    margin: 5px;
+}
+.controls, #downloadButton, #toggleButton, #cardCanvas {
+    display: none;
+}
+#cardContainer {
+    position: relative;
+}
+#cardCanvas {
+    max-width: 100%;
+    height: auto;
+}
+#canvasPreviewContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+#cardContainer, #output {
+    flex-shrink: 0;
+}
+#previewHeading {
+    margin-bottom: 10px;
+}
