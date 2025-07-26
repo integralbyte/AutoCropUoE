@@ -9,4 +9,4 @@ Features:
 - Live Preview of your photo on the card
 - Export the final image
 
-  
+### Try it now: https://integralbyte.github.io/AutoCropUoE
