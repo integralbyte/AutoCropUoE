@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UoE Card Photo Auto-Crop & Resize</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <h1>UoE Card Photo Auto-Crop & Resize</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <div class="controls">
+        <button id="toggleButton">Force Toggle Dominant Side (Not Recommended)</button><br>
+        Reposition:<br>
+        <div id="arrowButtons">
+            <button id="downButton">↑</button>
+            <button id="upButton">↓</button>
+            <button id="rightButton">←</button>
+            <button id="leftButton">→</button>
+        </div>
+    </div>
+
+    <button id="downloadButton">Download Cropped & Resized Image</button>
+
+    <input type="hidden" id="xCoord" value="0.699">
+    <input type="hidden" id="yCoord" value="0.68">
+    <input type="hidden" id="scaleRatio" value="0.394">
+
+    <div id="canvasPreviewContainer">
+        <div>
+            <img id="output" alt="Cropped and Resized Image">
+        </div>
+        <div id="cardContainer">
+            <h3 id="previewHeading">Card Preview:</h3>
+            <canvas id="cardCanvas"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
